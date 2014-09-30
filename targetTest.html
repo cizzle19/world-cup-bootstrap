@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>js test</h1>
+
+<ul id="myMenu">
+    <li><a href="#" data-id="tools">Tools</a></li>
+    <li><a href="#" data-id="modules">Moulds</a></li>
+    <li><a href="#" data-id="videos">Videos</a></li>
+</ul>
+
+<div class="subcontent" id="tools" style="display:block">tools</div>
+<div class="subcontent" id="modules">modules</div>
+<div class="subcontent" id="videos">videos</div>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+    $('#myMenu').on('click','a',function()
+    {
+        // fade out all open subcontents
+        $('.subcontent:visible').fadeOut();
+        // fade in new selected subcontent
+        $('.subcontent[id='+$(this).attr('data-id')+']').fadeIn();
+    });
+});
+</script>
+
+<style type="text/css">
+    div.subcontent { display:none; }
+</style>

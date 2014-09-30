@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+	  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="list-group">
+				<li class="list-group-item">Group A</li>
+				<li class="list-group-item groupA text-success">Team 1</li>
+				<li class="list-group-item groupA">Team 2</li>
+				<li class="list-group-item groupA">Team 3</li>
+				<li class="list-group-item groupA">Team 4</li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<table class="table table-border">
+				<tr>
+					<td class="groupATable"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+	var count=0;
+		$(".groupA").click(function(){
+			count++;
+			if(count<=2)
+			{
+			$(this).appendTo($(".groupATable"));
+			}
+		});
+			
+	</script>
+	
+  </body>
+</html>

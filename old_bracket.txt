@@ -1,0 +1,67 @@
+
+<style type="text/css">
+	table.bracket {
+    border-collapse: collapse;
+    border: none;
+}
+
+.bracket td {
+    vertical-align: middle;
+    width: 40em;
+    margin: 0;
+    padding: 10px;
+}
+
+.bracket td p {
+    border-bottom: solid 1px black;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+}
+
+.bracket th{
+    text-align:center;
+}
+	</style>
+
+
+
+		<table summary="Tournament Bracket" class="bracket">
+<tr>
+    <th>Round of 16<br>TBD</th>
+    <th>Quarterfinals<br>TBD</th>
+    <th>Semifinals<br>TBD</th>
+	<th>Finals<br>TBD</th>
+</tr><tr>
+    <td><p>A1</p></td>
+    <td rowspan="2"><p></p></td>
+    <td rowspan="4"><p></p></td>
+</tr>
+<tr>
+    <td><p>B2</p></td>
+</tr>
+<tr>
+    <td><p>C1</p></td>
+    <td rowspan="2"><p></p></td>
+</tr>
+<tr>
+    <td><p>D2</p></td>
+</tr>
+<tr>
+    <td><p>E1</p></td>
+    <td rowspan="2"><p></p></td>
+    <td rowspan="4"><p></p></td>
+</tr>
+<tr>
+    <td><p>F2</p></td>
+</tr>
+<tr>
+    <td><p>G1</p></td>
+    <td rowspan="2"><p></p></td>
+</tr>
+<tr>
+    <td><p>H2</p></td>
+</tr>
+
+</table>
+		
+		
